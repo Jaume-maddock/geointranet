@@ -1,0 +1,161 @@
+  html {/*spceific to this site so that map is ful-size fitted*/
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  /*height*/
+ body.nav-fit-height {
+    height: calc(100% - 50px);
+    margin: 0;
+    padding: 0;
+  }
+
+
+.with-navbar{
+    margin-top:50px !important
+}
+
+.full-height {
+    height: 100%;
+}
+
+.inherited-height {
+    height: inherit;
+}
+
+/*backgrounds*/
+.bg-pink
+{
+  background-color: #CE6F9E !important
+}
+.bg-grey
+{
+  background-color: #B7C4CF !important
+}
+
+/*font-colors*/
+.text-red {
+    color: red !important
+}
+
+.text-green {
+    color: green !important
+}
+
+.text-orange {
+    color: orange !important
+}
+
+.text-purple {
+    color: purple !important
+}
+
+
+#map 
+{
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+
+/*.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+  flex-wrap: wrap;
+}
+.row > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}*/
+
+.x2 {
+    font-size: calc(4em)
+}
+.x4 {
+    font-size: calc(8em)
+}
+
+
+/*text sizes*/
+.subtitulo,
+.subtituloB {
+    font-size: 1.2em;
+    line-height: 15px
+}
+p,
+.big-text,
+.mid-text,
+.small-text,
+.tiny-text,
+.big-text a,
+.mid-text a,
+.small-text a,
+.tiny-text a {
+    color: #555;
+    margin: 0
+}
+p.main-color,
+.big-text.main-color,
+.mid-text.main-color,
+.small-text.main-color,
+.tiny-text.main-color,
+.big-text a.main-color,
+.mid-text a.main-color,
+.small-text a.main-color,
+.tiny-text a.main-color {
+    color: #005591
+}
+
+.big-text {
+    font-size: 1.4em;
+    line-height: 18px
+}
+.big-text.x2{
+    font-size: calc(1.68em);
+    line-height: 22px !important
+}
+.big-text.x3 {
+    font-size: calc(1.96em);
+    line-height: 24px !important
+}
+.big-text.x4{
+    font-size: calc(2.24em);
+    line-height: 26px !important
+}
+.mid-text
+p {
+    font-size: 1.2em;
+    line-height: 16px
+}
+.small-text {
+    font-size: 1.1em;
+    line-height: 14px
+}
+.tiny-text{
+    font-size: 1em;
+    line-height: 14px
+}
+article p {
+    margin-bottom: 15px !important
+}
+article .small-text {
+    line-height: 18px
+}
+article p,
+checkbox,
+article .mid-text {
+    line-height: 20px
+}
+article .big-text {
+    line-height: 22px
+}
+
+/************/
+label.checkbox{
+    line-height: 20px
+}
+

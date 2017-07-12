@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="../../favicon.ico">
+
+	<title>Theme Template for Bootstrap</title>
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	 crossorigin="anonymous">
+	<!-- Bootstrap theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+	 crossorigin="anonymous">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="/home/jaume/Documents/Visual Studio files/Earth.Editor.Front/css/basic.css">
+	<link rel="stylesheet" href="/home/jaume/Documents/Visual Studio files/Earth.Editor.Front/css/main.css">
+</head>
+
+<body class="nav-fit-height">
+	<!-- Fixed navbar -->
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+				 aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+				<a class="navbar-brand" href="#">Earth Editor</a>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav big-text">
+					<li><a href="#">Home</a></li>
+					<li class="active"><a href="#about">Management</a></li>
+					<li><a href="#about">Sync</a></li>
+					<li><a href="#about">Translations</a></li>
+					<li><a href="#contact">Duplicates</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else here</a></li>
+							<li role="separator" class="divider"></li>
+							<li class="dropdown-header">Nav header</li>
+							<li><a href="#">Separated link</a></li>
+							<li><a href="#">One more separated link</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+	</nav>
+	<div class="container-fluid with-navbar full-height">
+		<div class="row inherited-height" >
+			<div class="col-xs-3">
+				<h2 class="mb-0">Dashboard</h2>
+				<div id="filters">
+					<h3>Filters</h3>
+					<div class="form-group mb-10">
+						<label class="hidden" for="usr">Geographical element:</label>
+						<input type="text" class="form-control large" id="usr" placeholder="City, hotel, zone...">
+					</div>
+					<div class="checkbox mt-0">
+						<label class="checkbox big-text">
+							<input type="checkbox" value="">Show hotels on map
+						</label>
+						<div id="map-legend">
+							<label class="checkbox big-text m-5">
+								<input type="checkbox" value="">
+								<i class="fa fa-map-marker text-red"></i> Manual
+							</label>
+							<label class="checkbox big-text m-5">
+								<input type="checkbox" value="">
+								<i class="fa fa-map-marker text-green"></i> Geographic
+							</label>
+							<label class="checkbox big-text m-5">
+								<input type="checkbox" value="">
+								<i class="fa fa-map-marker text-orange"></i> Both
+							</label>
+							<label class="checkbox big-text m-5">
+								<input type="checkbox" value="">
+								<i class="fa fa-map-marker text-purple"></i> Preprocess
+							</label>
+						</div>
+
+					</div>
+				</div>
+				<div id="management">
+					<h3>Management</h3>
+					<div class="form-group mb-10">
+						<label for="elem-name">Name:</label>
+						<input type="text" class="form-control large" id="elem-name" placeholder="Current element name">
+					</div>
+					<div class="form-group">
+						<label for="sel1">Geomaster type:</label>
+						<select class="form-control large" id="sel1">
+							<option>Locality</option>
+							<option>Zone</option>
+							<option>Region</option>
+							<option>Interest</option>
+						</select>
+					</div>
+					<div class="form-group mb-5">
+						<label for="btn3">Border type:</label>
+						<div class="btn-group btn-block" id="btn3">
+							<button class="btn btn-default btn-large col-xs-6 active"><i class="fa fa-square-o mr-5 ph-lg-5 ph-10 ph-sm-5 mv-10"></i>Square</button>
+							<button class="btn btn-default btn-large col-xs-6"><i class="fa fa-star-o mr-5 ph-lg-5 ph-10 ph-sm-5 mv-10"></i>Polygon</button>
+						</div>
+					</div>
+					<br>
+					<button type="button" class="btn btn-primary btn-block">Save changes</button>
+				</div>
+			</div>
+			<div class="col-xs-9 pl-0 pr-5 inherited-height">
+				<div id="map"></div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="https://use.fontawesome.com/3e952f25a9.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+	 crossorigin="anonymous"></script>
+	<script>
+		function initMap() {
+			var uluru = { lat: -25.363, lng: 131.044 };
+			var map = new google.maps.Map(document.getElementById('map'), {
+				zoom: 4,
+				center: uluru
+			});
+			var marker = new google.maps.Marker({
+				position: uluru,
+				map: map
+			});
+		}
+	</script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDdZUvpGa3OYPSQsBYQoeQt4F5cHEmtmk&callback=initMap">
+
+	</script>
+</body>
+
+</html>
